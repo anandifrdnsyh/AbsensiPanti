@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="SO2Ow3zzieNHxZ33ZSajil2NccSEZzDQ1tRP1xPJ">
+    <title>Dashboard - Absen Panti Asuhan Muhammdiyah K.H Mas Mansyur II</title>
+    <link rel="icon" type="image/png" href="http://localhost:8000/images/icons/Logo.png"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+       <link rel="icon" type="image/png" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
+     <link rel="icon" type="image/png" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css"/>
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/js/buttons.flash.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/js/buttons.html5.min.js">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/js/buttons.print.min.js">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/css/skins/_all-skins.min.css">
+    <link rel="stylesheet"
+          href="http://localhost:8000/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet"
+          href="http://localhost:8000/adminlte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/plugins/iCheck/all.css">
+    <link rel="stylesheet"
+          href="http://localhost:8000/adminlte/bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/plugins/timepicker/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet"
+          href="http://localhost:8000/adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://localhost:8000/font-awesome/css/all.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/css/adminLTE.min.css">
+
+    <!-- JQuery 3.3.1 -->
+    <script src="http://localhost:8000/js/app.js"></script>
+    <script src="http://localhost:8000/adminlte/bower_components/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="http://localhost:8000/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- DataTables -->
+    <script src="http://localhost:8000/adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="http://localhost:8000/adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- Morris.js charts -->
+    <script src="http://localhost:8000/adminlte/bower_components/raphael/raphael.min.js"></script>
+    <script src="http://localhost:8000/adminlte/bower_components/morris.js/morris.min.js"></script>
+    <!-- Sparkline -->
+    <script src="http://localhost:8000/adminlte/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="http://localhost:8000/adminlte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="http://localhost:8000/adminlte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="http://localhost:8000/adminlte/bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="http://localhost:8000/adminlte/bower_components/moment/min/moment.min.js"></script>
+    <script src="http://localhost:8000/adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- datepicker -->
+    <script src="http://localhost:8000/adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="http://localhost:8000/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    <!-- Slimscroll -->
+    <script src="http://localhost:8000/adminlte/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="http://localhost:8000/adminlte/bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="http://localhost:8000/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <script src="http://localhost:8000/adminlte/js/adminlte.min.js"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    </head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+        <header id="header" class="main-header">
+    <a href="/" class="logo">
+        <span class="logo-mini"></span>
+        <span class="logo-lg"></span>
+    </a>
+    <nav class="navbar navbar-static-top">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+                <li class="dropdown user user-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                        <span class="hidden-xs"> Akun Saya</span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li class="user-header width: 50px; height: 50px;" >
+                            <img src="http://localhost:8000/images/icons/Logo.png" class="img-circle" alt="User Image">
+                                <p>
+        admin
+        <small>Admin</small>
+    </p>
+                        </li>
+                        <li class="user-footer">
+                            <a href="http://localhost:8000/logout" class="btn btn-default btn-flat">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+    <aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu" data-widget="tree">
+            
+<li class="header">ADMIN NAVIGATION</li>
+
+<li class="">
+    <a href="http://localhost:8000/admin/dashboard">
+        <i class="fa fa-dashboard"></i>
+        <span>Dashboard</span>
+    </a>
+</li>
+
+
+<li class="treeview ">
+    <a href="#">
+        <i class="fa fa-users"></i>
+        <span>Users</span>
+        <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+        </span>
+    </a>
+    <ul class="treeview-menu">
+        <li class="">
+            <a href="http://localhost:8000/admin/users/admin"><i class="fa fa-circle-o"></i> Admin</a>
+        </li>
+        <li class="">
+            <a href="http://localhost:8000/admin/users/user"><i class="fa fa-circle-o"></i> User</a>
+        </li>
+    </ul>
+</li>
+
+
+<li class="">
+    <a href="http://localhost:8000/admin/absen">
+        <i class="fa fa-address-card"></i>
+        <span>Absen</span>
+    </a>
+</li>
+
+<li class="">
+    <a href="http://localhost:8000/admin/laporan">
+    <i class="fa fa-file"></i>
+        <span>Laporan</span>
+    </a>
+</li>
+        </ul>
+    </section>
+</aside>
+
+
+    <div class="content-wrapper">
+            <section class="content ">
+        <div class="box">
+            <form id="form_daftar" action="http://localhost:8000/admin/laporan/filterAbsen" method="POST">
+               <input type="hidden" name="_token" value="SO2Ow3zzieNHxZ33ZSajil2NccSEZzDQ1tRP1xPJ">                <div class="box-body">
+                    <section class="content">
+                        <div class="row">
+                                <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                        <i class="fa fa-address-card"></i>
+                                        <h3 class="box-title">Laporan Absen</h3>
+                                    </div>
+                                    <div class="box-body">
+
+                                    <label>Tahun<span style="color: red"> *</span></label>
+                                       <select style="cursor:pointer;" class="form-control" id="tag_select" name="year">
+                                                <option value="0" selected disabled> Pilih Tahun</option>
+                                                <option value=2020>2020</option><option value=2019>2019</option><option value=2018>2018</option><option value=2017>2017</option><option value=2016>2016</option><option value=2015>2015</option><option value=2014>2014</option><option value=2013>2013</option><option value=2012>2012</option><option value=2011>2011</option><option value=2010>2010</option><option value=2009>2009</option><option value=2008>2008</option><option value=2007>2007</option><option value=2006>2006</option><option value=2005>2005</option><option value=2004>2004</option><option value=2003>2003</option><option value=2002>2002</option><option value=2001>2001</option><option value=2000>2000</option><option value=1999>1999</option><option value=1998>1998</option><option value=1997>1997</option><option value=1996>1996</option><option value=1995>1995</option><option value=1994>1994</option><option value=1993>1993</option><option value=1992>1992</option><option value=1991>1991</option><option value=1990>1990</option><option value=1989>1989</option><option value=1988>1988</option><option value=1987>1987</option><option value=1986>1986</option><option value=1985>1985</option><option value=1984>1984</option><option value=1983>1983</option><option value=1982>1982</option><option value=1981>1981</option><option value=1980>1980</option><option value=1979>1979</option><option value=1978>1978</option><option value=1977>1977</option><option value=1976>1976</option><option value=1975>1975</option><option value=1974>1974</option><option value=1973>1973</option><option value=1972>1972</option><option value=1971>1971</option><option value=1970>1970</option><option value=1969>1969</option><option value=1968>1968</option><option value=1967>1967</option><option value=1966>1966</option><option value=1965>1965</option><option value=1964>1964</option><option value=1963>1963</option><option value=1962>1962</option><option value=1961>1961</option><option value=1960>1960</option>                                                </select>
+
+                                            <label>Bulan<span style="color: red"> *</span></label>
+                                            <select style="cursor:pointer;margin-top:1.5em;margin-bottom:1.5em;" class="form-control" id="tag_select" name="month">
+                                                <option value="0" selected disabled> Pilih Bulan</option>
+                                                <option value="01"> Januari</option>
+                                                <option value="02"> Februari</option>
+                                                <option value="03"> Maret</option>
+                                                <option value="04"> April</option>
+                                                <option value="05"> Mei</option>
+                                                <option value="06"> Juni</option>
+                                                <option value="07"> Juli</option>
+                                                <option value="08"> Agustus</option>
+                                                <option value="09"> September</option>
+                                                <option value="10"> Oktober</option>
+                                                <option value="11"> November</option>
+                                                <option value="12"> Desember</option>
+                                                </select>
+
+                                        <div class="box-body">
+                                            <button type="submit" class="btn btn-primary pull-right" form="form_daftar">
+                                                Submit
+                                            </button>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+
+        <div class="box">
+            <div class="box-header with-border">
+                <div class="card-body">
+                    <h3 class="box-title">Laporan User</h3>
+                     <div class="card-body  pull-right">
+                    <a href="http://localhost:8000/admin/laporan/filterAbsen">
+                        <button type="button" class="btn btn-block btn-danger">Export</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <table id="table_admin" class="table table-bordered table-striped dataTable">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Kode</th>
+                        <th>Tanggal</th>
+                        <th>Jam Masuk</th>
+                        <th>Jam Keluar</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                                            <tr>
+                            <td>1</td>
+                            <td>Moch Anandi Ferdiansyah</td>
+                            <td>anandi123</td>
+                            <td>Friday, 23 October 2020</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                                            <tr>
+                            <td>2</td>
+                            <td>Andi Ramadhan</td>
+                            <td>Andi</td>
+                            <td>Thursday, 22 October 2020</td>
+                            <td>03:34:46</td>
+                            <td>03:56:33</td>
+                        </tr>
+                                            <tr>
+                            <td>3</td>
+                            <td>Meysaro</td>
+                            <td>mey123</td>
+                            <td>Thursday, 22 October 2020</td>
+                            <td>03:53:28</td>
+                            <td>03:54:39</td>
+                        </tr>
+                                            <tr>
+                            <td>4</td>
+                            <td>Moch Anandi Ferdiansyah</td>
+                            <td>anandi123</td>
+                            <td>Thursday, 22 October 2020</td>
+                            <td>03:34:31</td>
+                            <td>03:53:38</td>
+                        </tr>
+                                            <tr>
+                            <td>5</td>
+                            <td>Ali Akbar</td>
+                            <td>ali123</td>
+                            <td>Thursday, 22 October 2020</td>
+                            <td>03:52:27</td>
+                            <td>03:56:07</td>
+                        </tr>
+                                            <tr>
+                            <td>6</td>
+                            <td>Yandika Warisman</td>
+                            <td>yandika123</td>
+                            <td>Thursday, 22 October 2020</td>
+                            <td>03:52:16</td>
+                            <td>03:57:09</td>
+                        </tr>
+                                        </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    </div>
+    <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2020 <a href="http://localhost:8000/admin/dashboard">Panti Asuhan Muhammadiyah II Surabaya</a>.</strong> All rights
+    reserved.
+</footer>
+</div>
+<script src="http://localhost:8000/js/notify.js"></script>
+
+<script>
+    
+    
+    
+    
+    </script>
+
+    <script>
+        $(function () {
+            $('#table_admin').DataTable()
+        })
+    </script>
+</body>
+</html>
